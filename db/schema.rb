@@ -10,13 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_27_134216) do
+ActiveRecord::Schema.define(version: 2019_06_27_134904) do
 
   create_table "uploaders", force: :cascade do |t|
     t.string "title"
     t.text "info"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "photo_file_name"
+    t.string "photo_content_type"
+    t.bigint "photo_file_size"
+    t.datetime "photo_updated_at"
+    t.string "music_file_name"
+    t.string "music_content_type"
+    t.bigint "music_file_size"
+    t.datetime "music_updated_at"
+    t.string "movie_file_name"
+    t.string "movie_content_type"
+    t.bigint "movie_file_size"
+    t.datetime "movie_updated_at"
   end
 
 end

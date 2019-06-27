@@ -1,5 +1,5 @@
 body {
-  background-color: #fff;
+  background-color: #eeeeee;
   color: #333;
   margin: 33px;
   font-family: verdana, arial, helvetica, sans-serif;
@@ -32,12 +32,19 @@ a {
   }
 }
 
+table {
+  border-collapse: collapse;
+  border: 1px solid #444444;
+  width: 100%
+}
+
 th {
   padding-bottom: 5px;
 }
 
 td {
   padding: 0 5px 7px;
+  border: 1px solid #999999
 }
 
 div {

@@ -1,4 +1,4 @@
-<%= form_with(model: uploader, local: true) do |form| %>
+<%= form_with(model: uploader, local: true, html: {multipart: true}) do |form| %>
   <% if uploader.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(uploader.errors.count, "error") %> prohibited this uploader from being saved:</h2>
@@ -19,6 +19,22 @@
   <div class="field">
     <%= form.label :info %>
     <%= form.text_area :info %>
+  </div>
+
+  <%# Changes %>
+  <div class="field">
+    <%= form.label :photo %>
+    <%= form.file_field :photo, id: :uploader_photo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :video %>
+    <%= form.file_field :video, id: :uploader_video %>
+  </div>
+
+  <div class="field">
+    <%= form.label :music %>
+    <%= form.file_field :music, id: :uploader_music %>
   </div>
 
   <div class="actions">
