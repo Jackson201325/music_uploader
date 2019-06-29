@@ -1,0 +1,11 @@
+function playPause() {
+  const playButton = document.querySelector('.hello')
+  playButton.addEventListener('click', function() {
+    var audio = new Audio();
+    audio.src = "<%= @uploader.music %>";
+    audio.play();
+  })
+  console.log('<%= @uploader.title %>')
+}
+
+playPause()

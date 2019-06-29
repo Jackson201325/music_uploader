@@ -37,5 +37,14 @@
   <% end %>
 </p>
 
+<p>
+  <strong>Music Player:</strong>
+    <div class="music__player">
+      <%= link_to controls_uploader_path(@uploader), remote: true do %>
+        <ion-icon name="play-circle" class="hello"></ion-icon>
+      <% end %>
+    </div>
+</p>
+
 <%= link_to 'Edit', edit_uploader_path(@uploader) %> |
 <%= link_to 'Back', uploaders_path %>

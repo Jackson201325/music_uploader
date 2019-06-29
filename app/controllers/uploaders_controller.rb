@@ -1,5 +1,6 @@
 class UploadersController < ApplicationController
-  before_action :set_uploader, only: [:show, :edit, :update, :destroy]
+  # Changes added set_uploader to controls
+  before_action :set_uploader, only: [:show, :edit, :update, :destroy, :controls]
 
   # GET /uploaders
   # GET /uploaders.json
@@ -59,6 +60,10 @@ class UploadersController < ApplicationController
       format.html { redirect_to uploaders_url, notice: 'Uploader was successfully destroyed.' }
       format.json { head :no_content }
     end
+  end
+
+  def controls
+    @puppy = "hello"
   end
 
   private
