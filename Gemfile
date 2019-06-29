@@ -31,6 +31,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'paperclip', '~> 6.0'
 gem 'aws-sdk-s3', '> 1.9'
 gem 'paperclip-av-transcoder'
+gem 'plyr-rails'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'

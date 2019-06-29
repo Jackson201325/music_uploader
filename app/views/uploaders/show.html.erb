@@ -22,7 +22,7 @@
 <p>
   <strong>Music:</strong>
   <% if @uploader.music.present? %>
-    <%= audio_tag(@uploader.music, controls:true, style: 'width:100%') %>
+    <%= audio_tag(@uploader.music, controls:true, style: 'width:100%', id:'player') %>
   <% else %>
     "No music available"
   <% end %>

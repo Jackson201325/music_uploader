@@ -31,15 +31,7 @@
           <% if uploader.movie.present? %>
             <%= image_tag uploader.movie.url(:thumb) %>
           <% else %>
-            "NO photo"
-          <% end %>
-        </td>
-
-        <td>
-          <% if uploader.photo.present? %>
-            <%= image_tag uploader.photo.url(:thumb) %>
-          <% else %>
-            "NO music"
+            "No movie"
           <% end %>
         </td>
 
@@ -50,6 +42,7 @@
     <% end %>
   </tbody>
 </table>
+
 
 <br>
 
